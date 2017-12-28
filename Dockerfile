@@ -8,7 +8,8 @@ RUN apk add -v --no-cache \
 RUN pip install \
         git+https://github.com/freeletics/jenkins-job-builder@stable/1.6#egg=jenkins-job-builder \
         git+https://github.com/freeletics/python-jenkins@master#egg=python-jenkins \
-    && pip install jenkins-job-builder-addons==1.0.5
+        jenkins-job-builder-addons==1.0.5 \
+        jenkins-job-builder-naginator==0.0.1
 
 COPY start.sh /usr/local/bin/jenkins-jobs.sh
 
