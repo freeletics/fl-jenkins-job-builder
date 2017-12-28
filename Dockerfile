@@ -8,7 +8,7 @@ RUN apk add -v --no-cache \
     curl \
     git
 
-RUN pip install -e $PYTHON_JENKINS_URL -e $JJB_URL \
+RUN pip install -e "$PYTHON_JENKINS_URL" -e "$JJB_URL" \
     && pip install jenkins-job-builder-addons
 
 COPY start.sh /usr/local/bin/jenkins-jobs.sh
