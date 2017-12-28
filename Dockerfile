@@ -1,5 +1,5 @@
 FROM python:2.7-alpine
-MAINTAINER Freeletics <operations@freeletics.com>
+LABEL maintainer="Freeletics <operations@freeletics.com>"
 
 ARG JJB_URL=git+https://github.com/freeletics/jenkins-job-builder.git@stable/1.6#egg=jenkins-job-builder
 ARG PYTHON_JENKINS_URL=git+https://github.com/freeletics/python-jenkins.git#egg=python-jenkins
